@@ -1,0 +1,396 @@
+.basic-form {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .check_mark {
+        display: flex;
+        // align-items: center;
+
+        .checkbox {
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1.5rem;
+        }
+
+        .terms_text {
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            color: lightgray;
+
+        }
+    }
+
+    .login_acc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        color: black;
+        font-weight: 400;
+        margin-bottom: 3rem;
+
+
+        .blue_text {
+            color: #044db5;
+            font-weight: 600;
+        }
+    }
+
+    .google_login {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: black;
+        padding: 0 2rem;
+        border-radius: .8rem;
+        background-color: white;
+        border: .1rem solid #D6D6D7;
+        height: 5rem;
+        cursor: pointer;
+        margin-bottom: 2.5rem;
+
+        &:hover {
+            border-color: #044db5
+        }
+
+        .icon_blk {
+            width: 3rem;
+            min-width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .googleLogin-Package {
+        display: flex !important;
+        border-radius: .8rem !important;
+        background-color: white !important;
+        border: .2rem solid #a8a8a8 !important;
+        box-shadow: none !important;
+        align-items: center !important;
+        justify-content: center;
+        margin: 0 auto !important;
+        padding: 0px 1rem !important;
+        width: 100% !important;
+        font-size: 16px !important;
+        color: #000 !important;
+
+        &:hover {
+            color: black !important;
+            border-color: #044db5 !important;
+        }
+
+        svg {
+            margin-top: 5px;
+        }
+    }
+
+    .forgot {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    .submit-btn {
+        border: transparent;
+        border-radius: .8rem;
+        width: 100%;
+        height: 3rem;
+        background-color: #044db5;
+        color: white;
+        font-size: 1rem;
+        line-height: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        cursor: pointer;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .basic-form {
+        margin: 1rem;
+    }
+    // .input_blk {
+    //     margin: 1rem;
+    // }
+}
+
+.input_blk {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    // display: flex;
+    // align-items: center;
+
+    .icon_blk {
+        position: absolute;
+        right: 2rem;
+        top: 35%;
+        transform: translateY(-35%);
+
+    }
+
+
+    input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        padding: 0 3rem;
+        border-radius: 1.6rem;
+        background: #ffffff;
+        border: 0.1rem solid #d6d6d7;
+        border-radius: 0.8rem;
+        font-size: 1.8rem;
+        line-height: 100%;
+        // margin-bottom: 1.5rem;
+
+        &:hover {
+            border-color: #044db5;
+            outline: none;
+        }
+
+        &:focus {
+            border-color: #044db5;
+            outline: none;
+            box-shadow: initial;
+        }
+    }
+}
+
+.main-wrapper {
+    margin: 20px;
+}
+
+.wrapper-container{
+    margin: 20px;
+    padding: 35px;
+    background-color: rgba(243, 243, 243, 0.431372549);
+    box-shadow: 5px 5px 18px black;
+    border-radius: 15px;
+    height: max-content;
+}
+
+.input_blk {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    background: #ffffff;
+    border: 0.1rem solid #d6d6d7;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  
+    &:hover {
+      border-color: #044db5;
+    }
+  
+    @media screen and (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  
+    .react-tel-input {
+      width: 100%;
+      border: initial;
+      height: initial;
+      background: initial;
+      border-radius: initial;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+  
+      @media screen and (max-width: 490px) {
+        right: 2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: initial;
+      padding: 0 5rem 0 10rem;
+  
+      @media screen and (max-width: 490px) {
+        padding: 0 2rem 0 6rem;
+      }
+  
+      .react-tel-input {
+        width: 100%;
+  
+        .special-label {
+          display: none;
+        }
+  
+        .form-control {
+          width: 100%;
+          height: 7rem;
+          padding: 0 5rem 0 6rem;
+          background: transparent;
+          /* Blue 1 */
+          border: initial;
+          border-radius: 1.6rem;
+  
+          &:focus {
+            border: transparent;
+            outline: none;
+            box-shadow: initial;
+          }
+  
+          @media screen and (max-width: 490px) {
+            padding: 0 2rem 0 6rem;
+          }
+        }
+  
+        .flag-dropdown {
+          position: absolute;
+          left: 0;
+          justify-content: center;
+          display: flex;
+          background: transparent;
+          border: initial;
+          height: 50px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          min-width: 60px;
+  
+          @media screen and (max-width: 490px) {
+            left: 1rem;
+          }
+        }
+  
+        .selected-flag {
+          outline: none;
+          position: relative;
+          width: 38px;
+          height: 100%;
+          padding: 0 0 0 8px;
+          border-radius: 3px 0 0 3px;
+  
+          &:hover,
+          :focus,
+          :active,
+          :focus-within {
+            background-color: initial;
+          }
+  
+          .flag {
+            position: absolute;
+            top: 50%;
+            margin-top: -5px;
+          }
+  
+          .arrow {
+            position: relative;
+            top: 50%;
+            margin-top: -2px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 4px solid #555;
+          }
+        }
+  
+        .flag {
+          width: 16px;
+          height: 11px;
+        }
+  
+        .ph {
+          background-position: -48px -110px;
+        }
+      }
+    }
+  
+    .icon_blk {
+      width: 2.4rem;
+      min-width: 2.4rem;
+      height: 2.4rem;
+      position: absolute;
+      left: 2rem;
+  
+      @media screen and (max-width: 490px) {
+        left: 2.5rem;
+      }
+    }
+  
+    .react-tel-input {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  
+    .passwordVisibilityReset {
+      cursor: pointer;
+      position: absolute;
+      right: 5rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      color: #044db5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      @media screen and (max-width: 490px) {
+        right: 2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: initial;
+      padding: 0 2rem;
+      font-size: 1.1rem;
+  
+      @media screen and (max-width: 1440px) {
+        font-size: 1rem;
+      }
+  
+      @media screen and (max-width: 490px) {
+        // padding: 0 2rem 0 6rem;
+      }
+  
+      &::placeholder {
+        // color: red;
+      }
+  
+      &:focus {
+        border: initial;
+        outline: none;
+      }
+    }
+  
+    & > .error-message {
+      text-align: left;
+      margin: 0;
+      color: red;
+      font-size: 1rem;
+      line-height: 2.1rem;
+      display: flex;
+      align-items: flex-start;
+      position: absolute;
+      top: 105%;
+      left: 0;
+    }
+  }
